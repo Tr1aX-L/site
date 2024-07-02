@@ -110,3 +110,11 @@ body {
     opacity: 0;
     transform: translateY(-5px);
 }
+
+.dimmed {
+    opacity: 0.5;
+    pointer-events: none;
+}
+.active {
+    opacity: 1;
+}
