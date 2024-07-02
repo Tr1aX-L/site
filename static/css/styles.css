@@ -1,0 +1,136 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: rgb(0,0,0);
+    background: linear-gradient(90deg, rgba(0,0,0,1) 0%, rgb(57, 57, 57) 50%, rgba(0,0,0,1) 100%);
+    color: #ffffff;
+}
+
+.container {
+    display: flex;
+    height: 100vh;
+}
+
+.sidebar {
+    width: 120px;
+    background-color: #1c1c1c;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 20px;
+    border-radius: 10px;
+    margin: 10px;
+}
+
+.profile {
+    margin-bottom: 20px;
+}
+
+.plans {
+    margin-bottom: 20px;
+}
+
+.profile-button {
+    background-color: #333;
+    color: white;
+    padding: 10px 16px;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+    text-align: left;
+    font-size: 16px;
+    border-radius: 3%;
+}
+
+.plans-button {
+    background-color: #333;
+    color: white;
+    padding: 10px 21px;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+    text-align: left;
+    font-size: 16px;
+}
+
+.profile-button:hover {
+    background-color: #555;
+}
+
+.plans-button:hover {
+    background-color: #555;
+}
+
+.main-content {
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+}
+
+.profile-header {
+    text-align: center;
+    max-width: 400px;
+}
+
+.profile-image {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    margin-bottom: 20px;
+}
+
+.profile-name {
+    font-size: 24px;
+    margin: 0;
+}
+
+.profile-text {
+    margin-top: 10px;
+    font-size: 16px;
+    color: #cccccc;
+    transition: opacity 0.3s, transform 0.3s;
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.contact-buttons {
+    margin-top: 20px;
+    text-align: center;
+}
+
+.button {
+    display: inline-block;
+    border: 2px solid #4a90e2;
+    border-radius: 10px;
+    color: #4a90e2;
+    padding: 10px 20px;
+    text-decoration: none;
+    font-size: 16px;
+    margin: 5px;
+    transition: background-color 0.3s, color 0.3s;
+    position: relative;
+}
+
+.button img {
+    max-width: 16px;
+    max-height: 16px;
+    vertical-align: middle;
+    margin-right: 8px;
+}
+
+.button i {
+    margin-right: 8px;
+}
+
+.button:hover {
+    background-color: #4a90e2;
+    color: #ffffff;
+}
+
+.hidden {
+    opacity: 0;
+    transform: translateY(-5px);
+}
