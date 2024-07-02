@@ -12,8 +12,8 @@ body {
 }
 
 .sidebar {
-    width: 120px;
-    background-color: #1c1c1c;
+    width: 50px;
+    background-color: #111111;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -22,43 +22,19 @@ body {
     margin: 10px;
 }
 
-.profile {
+.icon {
     margin-bottom: 20px;
-}
-
-.plans {
-    margin-bottom: 20px;
-}
-
-.profile-button {
-    background-color: #333;
-    color: white;
-    padding: 10px 16px;
-    border: none;
     cursor: pointer;
-    width: 100%;
-    text-align: left;
-    font-size: 16px;
-    border-radius: 3%;
 }
 
-.plans-button {
-    background-color: #333;
-    color: white;
-    padding: 10px 21px;
-    border: none;
-    cursor: pointer;
-    width: 100%;
-    text-align: left;
-    font-size: 16px;
+.icon img {
+    width: 30px;
+    height: 30px;
+    transition: filter 0.3s;
 }
 
-.profile-button:hover {
-    background-color: #555;
-}
-
-.plans-button:hover {
-    background-color: #555;
+.icon.active img {
+    filter: brightness(0.5);
 }
 
 .main-content {

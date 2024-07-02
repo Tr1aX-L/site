@@ -1,7 +1,16 @@
 document.addEventListener('DOMContentLoaded', function() {
     var originalProfileText = document.querySelector('.profile-text').innerHTML;
 
+    var icons = document.querySelectorAll('.icon');
     var plansButton = document.getElementById('plans-button');
+    var profileButton = document.getElementById('profile-button');
+
+    icons.forEach(icon => {
+        icon.addEventListener('click', function() {
+            icons.forEach(i => i.classList.remove('active'));
+            this.classList.add('active');
+        });
+    });
 
     plansButton.addEventListener('click', function() {
         var updateElement = document.querySelector('.profile-text');
@@ -12,8 +21,6 @@ document.addEventListener('DOMContentLoaded', function() {
             updateElement.classList.remove('hidden');
         }, 300);
     });
-
-    var profileButton = document.getElementById('profile-button');
 
     profileButton.addEventListener('click', function() {
         var updateElement = document.querySelector('.profile-text');
